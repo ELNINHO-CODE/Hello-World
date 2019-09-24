@@ -1,3 +1,20 @@
-using System
+using System;
 
-class Programm
+namespace MyFirstProject
+{
+    class Food
+    {
+        static void Main(string[] args)
+        {
+            byte apple = 6;
+            sbyte eatapple = -2;
+            ushort grape = 20000;
+            short eatgrape = -5000;
+            uint buckwheat = 10000;
+            int eatbuckwheat = -5000;
+            long z = grape + eatgrape;
+            Console.WriteLine($"There were grapes {grape} eat {eatgrape} = Grapes left {z} ");
+            Console.ReadKey();
+        }
+    }
+}
