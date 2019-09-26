@@ -7,14 +7,18 @@ namespace MyFirstProject
         static void Main(string[] args)
         {
             byte apple = 6;
-            sbyte eatapple = -2;
+            sbyte eatapple = 2;
             ushort grape = 20000;
-            short eatgrape = -5000;
+            short eatgrape = 5000;
             uint buckwheat = 10000;
-            int eatbuckwheat = -5000;
-            long z = grape + eatgrape;
+            int eatbuckwheat = 5000;
+            long z = grape - eatgrape;
+            Console.WriteLine ($"apple={apple} eatgrape={eatgrape} grape={grape} eatgrape={eatgrape} buckwheat={buckwheat} eatbuckwheat={eatbuckwheat}");
             Console.WriteLine($"There were grapes {grape} eat {eatgrape} = Grapes left {z} ");
             Console.ReadKey();
         }
-    }
+
+        }
 }
+
+
