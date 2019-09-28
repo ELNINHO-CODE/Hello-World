@@ -1,24 +1,56 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MyFirstProject
+namespace ConsoleApp1
 {
-    class Food
+    class Program
     {
         static void Main(string[] args)
         {
-            byte apple = 6;
-            sbyte eatapple = 2;
-            ushort grape = 20000;
-            short eatgrape = 5000;
-            uint buckwheat = 10000;
-            int eatbuckwheat = 5000;
-            long z = grape - eatgrape;
-            Console.WriteLine ($"apple={apple} eatgrape={eatgrape} grape={grape} eatgrape={eatgrape} buckwheat={buckwheat} eatbuckwheat={eatbuckwheat}");
-            Console.WriteLine($"There were grapes {grape} eat {eatgrape} = Grapes left {z} ");
-            Console.ReadKey();
-        }
+
+            {
+                // Первое и второе задание
+                byte apple = 6;
+                sbyte eatapple = 2;
+                ushort grape = 20000;
+                short eatgrape = 5000;
+                uint buckwheat = 10000;
+                int eatbuckwheat = 5000;
+                long z = grape - eatgrape;
+                Console.WriteLine($"apple={apple} eatapple={eatapple} eatgrape ={eatgrape} grape={grape} eatgrape={eatgrape} buckwheat={buckwheat} eatbuckwheat={eatbuckwheat}");
+                Console.WriteLine($"There were grapes {grape} eat {eatgrape} = Grapes left {z} ");
+             
+                // третье задание
+                Console.Write("Enter a name: ");
+                string name = Console.ReadLine();
+
+                Console.Write("Введите фамилию: ");
+                string sname = Console.ReadLine();
+
+                Console.Write("Введите отчество: ");
+                string midname = Console.ReadLine(); ;
+
+
+                Console.WriteLine($"{name} {sname} {midname}");
+
+                Console.ReadKey();
+
+                // четвертое задание
+                int x = 3;
+                int y = 2;
+                Console.WriteLine("Нажмите + или -");
+                string selection = Console.ReadLine();
+
+                int j = selection == "+" ? (x + y) : (x - y);
+                Console.WriteLine(j);
+
+
+            }
 
         }
+    }
 }
-
-
+ 
