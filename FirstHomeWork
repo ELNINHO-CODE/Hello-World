@@ -39,13 +39,34 @@ namespace ConsoleApp1
                 Console.ReadKey();
 
                 // четвертое задание
-                int x = 3;
-                int y = 2;
-                Console.WriteLine("Нажмите + или -");
-                string selection = Console.ReadLine();
+Console.Write("Enter Number 1: "); 
+int x = Convert.ToInt32(Console.ReadLine()); 
+Console.Write("Enter Number 2: "); 
+int y = Convert.ToInt32(Console.ReadLine()); 
+Console.Write("Enter operation: "); 
 
-                int j = selection == "+" ? (x + y) : (x - y);
-                Console.WriteLine(j);
+string selection = Console.ReadLine(); 
+switch (selection) 
+{ 
+case "+": 
+Console.WriteLine("x+y"); 
+break; 
+case "-": 
+Console.WriteLine("x-y"); 
+break; 
+case "*": 
+Console.WriteLine("x*y"); 
+break; 
+case "/": 
+Console.WriteLine("x/y"); 
+break; 
+default: 
+Console.WriteLine("Error"); 
+break; 
+
+int z = selection; 
+Console.WriteLine(z); 
+Console.ReadKey(); 
 
 
             }
