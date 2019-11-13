@@ -1,0 +1,72 @@
+using System;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.Clear();
+                double firstvalue, secondvalue;
+                string action;
+
+                try
+                {
+                    Console.WriteLine("Enter the first number:");
+                    firstvalue = Double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Enter the second number:");
+                    secondvalue = Double.Parse(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("False action");
+                    Console.ReadLine();
+                    continue;
+                }
+
+
+                Console.WriteLine("Enter the first number:");
+                firstvalue = Double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the second number:");
+                secondvalue = Double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Select an operation: '+' '-' '*' '/'");
+                action = Console.ReadLine();
+
+                switch (action)
+                {
+                    case "+":
+                        Console.WriteLine(firstvalue + secondvalue);
+                        break;
+                    case "-":
+                        Console.WriteLine(firstvalue - secondvalue);
+                        break;
+                    case "*":
+                        Console.WriteLine(firstvalue * secondvalue);
+                        break;
+                    case "/":
+                        if (secondvalue == 0)
+                        {
+                            Console.WriteLine(0);
+                        }
+                        else
+                        {
+                            Console.WriteLine(firstvalue / secondvalue);
+                        }
+                        break;
+
+
+                    default:
+                        Console.WriteLine("Error, wrong action");
+                        break;
+                }
+                Console.ReadKey();
+            }
+
+        }
+    }
+}
