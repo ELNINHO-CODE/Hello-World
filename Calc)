@@ -70,3 +70,17 @@ namespace ConsoleApplication1
         }
     }
 }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the length of the area :");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the width of the area :");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = a * b;
+            Console.WriteLine("The area is =" + c);
+            Console.ReadLine();
+
+        }
+    }
+}
