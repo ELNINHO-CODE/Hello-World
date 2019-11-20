@@ -1,0 +1,37 @@
+using System;
+
+namespace MyProjectGAME
+{
+    class Team
+    {
+        static void Main(string[] args)
+        {
+            const int SturtCapital = 1000;
+            const int PriceTraining = 100;
+            const int Pricetournament = 300;
+            const int Priceholiday = 50;
+            const int Training = 2;
+
+
+            string team1 = "VGTU";
+            int rangteam1 = 70;
+
+            string team2 = "VGU";
+            int rangteam2 = 73;
+
+            string team3 = "VGMU";
+            int rangteam3 = 70;
+
+            string team4 = "VGASU";
+            int rangteam4 = 72;
+
+            string team5 = "VGAU";
+            int rangteam5 = 68;
+
+
+            Console.WriteLine(team1);
+            Console.ReadKey();
+
+        }
+    }
+}
